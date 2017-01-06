@@ -4,7 +4,7 @@ $(document).ready(function() {
   var currentDoctorObject = new Doctor();
   $('.showDoctors').hide();
 
-  $('#findDoctor').submit(function() {
+  $('#findDoctor').submit(function(event) {
     event.preventDefault();
     $('.showDoctors').empty();
 
