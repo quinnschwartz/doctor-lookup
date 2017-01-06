@@ -45,6 +45,7 @@ $(document).ready(function() {
 
     $('#recommend').show();
     $('.showDoctors').show();
+    $('.doctor').hide();
   });
 });
 

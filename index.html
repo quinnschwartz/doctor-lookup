@@ -9,17 +9,26 @@
     <title>PDX Doctor Link</title>
   </head>
   <body>
-    <h1>PDX Doctor Link</h1>
-    <h2>Find doctors in the Portland area best qualified to treat you</h2>
-    <form id="findDoctor">
-      <label for="medicalIssue">Please enter the medical issue you are experiencing:</label>
-      <input id="medicalIssue" type="text">
-      <button type="submit">Submit</button>
-    </form>
-    <h2 id="recommend">Based on your input we recommend the following doctors (click name for bio):</h2>
-    <br>
+  <div class="container">
+    <header>
+      <div class="top">
+        <h1>PDX Doctor Link</h1>
+        <img class="logo" src="img/logo.png" alt="logo">
+      </div>
+      <img class="doctor" src='img/doctor.jpg' alt="image of doctor">
+    </header>
+      <h2>Find doctors in the Portland area best qualified to treat you!</h2>
+      <form id="findDoctor">
+        <label for="medicalIssue">Please enter the medical issue you are experiencing:</label>
+        <input id="medicalIssue" type="text">
+        <button type="submit">Submit</button>
+      </form>
+      <h3 id="recommend">Based on your input we recommend the following doctors:</h3>
+      <br>
+    </div>
     <ul class="showDoctors">
 
     </ul>
+
   </body>
 </html>
