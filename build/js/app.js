@@ -18,7 +18,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
      }));
   })
    .fail(function(error){
-    //  $('.showDoctors').text(error.responseJSON.message);
+     $('.showDoctors').text(error.responseJSON.message);
       console.log("fail");
     });
 };
