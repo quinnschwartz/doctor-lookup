@@ -1,7 +1,6 @@
 {
-  "name": "",
+  "name": "doctor",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +21,15 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.4",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinnschwartz/jsTemplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quinnschwartz/jsTemplate/issues"
+  },
+  "homepage": "https://github.com/quinnschwartz/jsTemplate#readme",
+  "description": ""
 }
