@@ -11,9 +11,9 @@ Doctor = function(medicalIssue) {
 
 
 Doctor.prototype.getDoctors = function(medicalIssue) {
-  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue+'&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=10&user_key=' + apiKey).then(function(result) {
+  $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue+'&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey).then(function(result) {
      $('.showDoctors').text(result.data.forEach(function(data) {
-       $('.showDoctors').append("<li>" + "<span>Name:</span>" + " " + data.profile.bio + "</li>");
+       $('.showDoctors').append("<li>" + "<span>" + data.profile.first_name + " " + data.profile.middle_name + " " + data.profile.last_name + " " + data.profile.title + "</span>" + " " + data.profile.bio + "</li>");
       console.log(result);
      }));
   })
@@ -33,7 +33,7 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 $(document).ready(function() {
   var currentDoctorObject = new Doctor();
   $('.showDoctors').hide();
-
+  $('#recommend').hide();
   $('#findDoctor').submit(function(event) {
     event.preventDefault();
     $('.showDoctors').empty();
@@ -43,6 +43,7 @@ $(document).ready(function() {
 
     currentDoctorObject.getDoctors(medicalIssue);
 
+    $('#recommend').show();
     $('.showDoctors').show();
   });
 });
