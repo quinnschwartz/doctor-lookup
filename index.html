@@ -6,9 +6,20 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Doctor Lookup</title>
+    <title>Doctor Link</title>
   </head>
   <body>
-    
+    <h1>Doctor Link</h1>
+    <h2>Find the doctors in your area best qualified to treat you</h2>
+    <form id="findDoctor">
+      <label for="medicalIssue">Please enter the medical issue you are experiencing:</label>
+      <input id="medicalIssue" type="text">
+      <button type="submit">Submit</button>
+    </form>
+    <h2 class="showDoctors">Based on your input we recommend these doctors:</h2>
+    <br>
+    <ul class="showDoctors">
+
+    </ul>
   </body>
 </html>
