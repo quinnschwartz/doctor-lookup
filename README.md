@@ -21,6 +21,7 @@ _This web page will enable the user to submit a medical issue into a form and re
 * _CSS_
 * _Git_
 * _Javascript_
+* _AJAX_
 * _API_
 * _NPM_
 * _Gulp_
