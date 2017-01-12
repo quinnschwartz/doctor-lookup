@@ -13,7 +13,10 @@ _This web page will enable the user to submit a medical issue into a form and re
 * _Clone the repository_
 * _Install Node.js on you computer through Homebrew if you haven't already (terminal command: $ brew install node)_
 * _Install gulp globally on your computer if you haven't already (terminal command: $ npm install gulp -g)_
-* _run the following commands in terminal: $ npm install $ bower install $ gulp build $ gulp serve_
+* _Run the following commands in terminal inside of the project directory: $ npm install $ bower install $ gulp build $ gulp serve_
+* _
+* _Pull up https://developer.betterdoctor.com/ in your browser and follow the instructions to sign up to receive a free API key, then copy the API key that you receive.  
+* _Create a file at the top level of your directory structure called .env. Paste your API key into the file and set it equal to the variable exports.apiKey (e.g. exports.apiKey = "YOUR-APIKEY-GOES-HERE";)
 
 ## Technologies Used
 
